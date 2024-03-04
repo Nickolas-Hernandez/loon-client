@@ -24,7 +24,14 @@ export default function App() {
           <Text style={styles.text}>DAY</Text>
           <Text style={styles.text}>4 - 5</Text>
         </View>
-        <View style={styles.horizontalLine}/>
+        <LinearGradient
+          colors={['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.3)']}
+          style={{height: 2}}
+          start={{ x: 0, y: 0.5 }}
+          end={{ x: 1, y: 0.5 }}
+        >
+          <View style={styles.horizontalLine}/>
+        </LinearGradient>
         <View style={[styles.section, styles.rowBetween]}>
           <Text style={styles.text}>AGE</Text>
           <Text style={styles.text}>2.8</Text>
@@ -86,7 +93,7 @@ const styles = StyleSheet.create({
   },
   horizontalLine: {
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: 'white',
+    // borderBottomColor: 'white',
     alignSelf: 'stretch'
   },
   riseAndSet: {
