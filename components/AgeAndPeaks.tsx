@@ -6,8 +6,8 @@ const AgeAndPeaks = () => {
     return (
     <View>
         <View style={[styles.section, styles.rowBetween]}>
-            <Text style={styles.lowOpacityText}>DAY</Text>
-            <Text style={styles.text}>4 - 5</Text>
+            <Text style={styles.lowOpacityText}>Age</Text>
+            <Text style={styles.text}>20.5</Text>
         </View>
         <LinearGradient
         colors={['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.3)']}
@@ -18,8 +18,8 @@ const AgeAndPeaks = () => {
             <View style={styles.horizontalLine} />
         </LinearGradient>
         <View style={[styles.section, styles.rowBetween]}>
-            <Text style={styles.lowOpacityText}>AGE</Text>
-            <Text style={styles.text}>2.8</Text>
+            <Text style={styles.lowOpacityText}>Peaks</Text>
+            <Text style={styles.text}>6:27 AM</Text>
         </View>
     </View>
     )
