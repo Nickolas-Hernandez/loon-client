@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import DateDisplay from '../components/DateDisplay';
 import MoonDisplay from '../components/MoonDisplay';
 import AgeAndPeaks from '../components/AgeAndPeaks';
-// import RiseAndSet from '../components/RiseAndSet';
+import RiseAndSet from '../components/RiseAndSet';
 
 
 const Home = () => {
@@ -14,6 +14,7 @@ const Home = () => {
             <DateDisplay />
             <MoonDisplay />
             <AgeAndPeaks />
+            <RiseAndSet />
         </View>
     );
 }
