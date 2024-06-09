@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { useFonts } from 'expo-font';
-import { LinearGradient } from 'expo-linear-gradient';
 import BookIcon from './components/icons/BookIcon';
 import CalendarIcon from './components/icons/Calendar';
 import CrescentIcon from './components/icons/Crescent';
@@ -17,34 +16,11 @@ export default function App() {
   const [view, setView] = useState('tonight')
 
   return (
-      <View style={styles.container}>
-    <Home />
-      </View>
+    <View style={styles.container}>
+        <Home />
+    </View>
   );
        {/* <View style={styles.container}>
-         <View style={styles.section}>
-          <Image
-  //           source={require('./assets/moon-mock-up.png')}
-  //         />
-  //       </View>
-  //       <View>
-  //         <View style={[styles.section, styles.rowBetween]}>
-  //           <Text style={styles.text}>DAY</Text>
-  //           <Text style={styles.text}>4 - 5</Text>
-  //         </View>
-  //         <LinearGradient
-  //           colors={['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.3)']}
-  //           style={{height: 2}}
-  //           start={{ x: 0, y: 0.5 }}
-  //           end={{ x: 1, y: 0.5 }}
-  //         >
-  //           <View style={styles.horizontalLine}/>
-  //         </LinearGradient>
-  //         <View style={[styles.section, styles.rowBetween]}>
-  //           <Text style={styles.text}>AGE</Text>
-  //           <Text style={styles.text}>2.8</Text>
-  //         </View>
-  //       </View>
   //       <View style={[styles.riseAndSet, styles.rowBetween]}>
   //         <View style={styles.alignCenter}>
   //           <Image 
