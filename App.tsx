@@ -23,10 +23,6 @@ export default function App() {
   );
        {/* <View style={styles.container}>
          <View style={styles.section}>
-           <Text style={styles.text}>March 3 2024</Text>
-           <Text style={styles.text}>New Moon / 16%</Text>
-         </View>
-         <View style={styles.section}>
           <Image
   //           source={require('./assets/moon-mock-up.png')}
   //         />

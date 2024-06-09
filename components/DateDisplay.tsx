@@ -16,7 +16,7 @@ const DateDisplay = () => {
 
 const styles = StyleSheet.create({
     section: {
-        paddingVertical: 20,
+        paddingVertical: 40,
         alignItems: 'center'
       },
       text: {
