@@ -9,14 +9,26 @@ import RiseAndSet from '../components/RiseAndSet';
 
 const Home = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Header />
             <DateDisplay />
             <MoonDisplay />
             <AgeAndPeaks />
             <RiseAndSet />
-        </View>
+        </View> 
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#000',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        paddingTop: 80,
+        color: 'white',
+        paddingHorizontal: 50
+    },
+});
 
 export default Home;

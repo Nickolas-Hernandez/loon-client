@@ -27,13 +27,16 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font", {
-        "fonts": [
-          "./assets/fonts/inter/Inter-Light.ttf",
-          "./assets/fonts/inter/Inter-Regular.ttf",
-          "./assets/fonts/inter/Inter-Medium.ttf"
-        ]
-      }
+      [
+        "expo-font", 
+        {
+          "fonts": [
+            "./assets/fonts/inter/Inter-Light.ttf",
+            "./assets/fonts/inter/Inter-Regular.ttf",
+            "./assets/fonts/inter/Inter-Medium.ttf"
+          ]
+        }
+      ]
     ]
   }
 }
