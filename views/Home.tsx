@@ -2,14 +2,33 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Header from '../components/Header';
 import DateDisplay from '../components/DateDisplay';
+import MoonDisplay from '../components/MoonDisplay';
+import AgeAndPeaks from '../components/AgeAndPeaks';
+import RiseAndSet from '../components/RiseAndSet';
+
 
 const Home = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Header />
             <DateDisplay />
-        </View>
+            <MoonDisplay />
+            <AgeAndPeaks />
+            <RiseAndSet />
+        </View> 
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#000',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        paddingTop: 80,
+        color: 'white',
+        paddingHorizontal: 50
+    },
+});
 
 export default Home;
