@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import React from 'react';
+import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './views/Home';
+import Loon from './components/icons/loon';
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
@@ -12,19 +13,26 @@ export default function App() {
     'Inter-Medium': require('./assets/fonts/inter/Inter-Medium.ttf'),
   });
 
-  // const [view, setView] = useState('tonight')
-
   const Tab = createBottomTabNavigator();
 
   return (
-    // <View style={styles.container}>
-      // <Home /> 
       <NavigationContainer>
           <Tab.Navigator>
-              <Tab.Screen name="Home" component={Home} />
+              <Tab.Screen 
+                  name="Home" 
+                  component={Home} 
+                  options={{ 
+                      headerTitle: (props) => <Loon />, 
+                      headerStyle: {
+                        backgroundColor: '#000',
+                        borderBottomWidth: 0,
+                        shadowOpacity: 0,
+                        elevation: 0,
+                      }
+                  }}
+              />
           </Tab.Navigator>
       </NavigationContainer>
-    // </View>
   );
 }
 
@@ -52,7 +60,6 @@ const styles = StyleSheet.create({
   },
   horizontalLine: {
     borderBottomWidth: StyleSheet.hairlineWidth,
-    // borderBottomColor: 'white',
     alignSelf: 'stretch'
   },
   riseAndSet: {
@@ -64,7 +71,4 @@ const styles = StyleSheet.create({
   alignCenter: {
     alignItems: 'center',
   },
-  nav: {
-    // marginTop: -400, 
-  }
 });
