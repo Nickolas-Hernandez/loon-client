@@ -4,6 +4,8 @@ import { useFonts } from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './views/Home';
+import Calendar from './views/Calendar';
+import Knowledge from './views/Knowledge';
 import Loon from './components/icons/loon';
 
 export default function App() {
@@ -17,10 +19,42 @@ export default function App() {
 
   return (
       <NavigationContainer>
-          <Tab.Navigator>
+          <Tab.Navigator
+            id="main-nav"
+            initialRouteName='Home'
+            // screenOptions={({ route }) => {
+              
+            // }}
+          >
+              <Tab.Screen 
+                  name="Calendar" 
+                  component={Calendar} 
+                  options={{ 
+                      headerTitle: (props) => <Loon />, 
+                      headerStyle: {
+                        backgroundColor: '#000',
+                        borderBottomWidth: 0,
+                        shadowOpacity: 0,
+                        elevation: 0,
+                      }
+                  }}
+              />
               <Tab.Screen 
                   name="Home" 
                   component={Home} 
+                  options={{ 
+                      headerTitle: (props) => <Loon />, 
+                      headerStyle: {
+                        backgroundColor: '#000',
+                        borderBottomWidth: 0,
+                        shadowOpacity: 0,
+                        elevation: 0,
+                      }
+                  }}
+              />
+              <Tab.Screen 
+                  name="Knowledge" 
+                  component={Knowledge} 
                   options={{ 
                       headerTitle: (props) => <Loon />, 
                       headerStyle: {
