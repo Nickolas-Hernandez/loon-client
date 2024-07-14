@@ -3,8 +3,8 @@ import { StyleSheet, View } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import BookIcon from '../components/icons/BookIcon';
-import CalendarIcon from '../components/icons/Calendar';
-import CrescentIcon from '../components/icons/Crescent';
+import CalendarIcon from '../components/icons/CalendarIcon';
+import CrescentIcon from '../components/icons/CrescentIcon';
 
 const RootNavigation = () => {
     const Tab = createBottomTabNavigator();
