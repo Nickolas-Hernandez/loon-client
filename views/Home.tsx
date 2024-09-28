@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
         color: 'white',
         paddingHorizontal: 50
     },
-});
+}); 
 
 export default Home;
