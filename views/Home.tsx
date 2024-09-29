@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         color: 'white',
-        paddingHorizontal: 50
+        paddingHorizontal: 20
     },
 }); 
 
