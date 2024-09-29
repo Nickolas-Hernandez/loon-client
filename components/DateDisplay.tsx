@@ -6,7 +6,7 @@ const DateDisplay = () => {
     return (   
       <View style={styles.section}>
           <Text style={styles.smallText }>{currentDate()}</Text>
-          <View style={{'flexDirection': 'row', 'marginTop': 20}}>
+          <View style={{'flexDirection': 'row', 'marginTop': 10}}>
               <Text style={styles.text}>New Moon</Text>
               <Text style={styles.lowOpacityText}> / 16%</Text>
           </View>
