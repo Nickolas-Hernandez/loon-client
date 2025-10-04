@@ -13,7 +13,7 @@ const MoonDisplay = () => {
 
 const styles = StyleSheet.create({
     section: {
-        paddingVertical: 20,
+        paddingVertical: 0, 
     },
 });
 
